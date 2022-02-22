@@ -79,7 +79,7 @@ export default {
         if (!result) {
           return;
         }
-        console.log(this.currency);
+        console.log(this.name);
         axios
           .post("http://127.0.0.1:8000/api/subscriptions/", this.subscription)
           .then((response) => {this.$router.push("/")});
